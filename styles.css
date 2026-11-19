@@ -3,3 +3,20 @@
 *::after {
     box-sizing: border-box;
 }
+
+.calculator {
+    display: flex;
+    flex-direction: collumn;
+}
+
+.output {}
+
+.buttons-container {
+    display: flex;
+    flex-direction: collumn;
+
+}
+
+.buttons-row {
+    display: flex;
+}
