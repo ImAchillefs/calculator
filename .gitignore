@@ -1,0 +1,4 @@
+# Neovim logs
+nvim.log
+messages.log
+*.log   
