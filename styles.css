@@ -4,19 +4,47 @@
     box-sizing: border-box;
 }
 
-.calculator {
-    display: flex;
-    flex-direction: collumn;
+html, body, .calculator, .buttons-container {
+    height: 83vh;
+    width: auto;
 }
 
-.output {}
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.output-container {
+    display: flex;
+    margin: 1rem;
+}
+
+.output {
+    flex-grow: 1;
+    height: 2.75rem;
+    border: 0.25rem solid black;
+}
 
 .buttons-container {
     display: flex;
-    flex-direction: collumn;
-
+    flex-direction: column;
+    margin: 1rem;
 }
 
 .buttons-row {
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.button {
+    flex-grow: 1;
+    text-align: center;
+    width: 2rem;
+    border: 0.25rem solid black;
+}
+
+.button:hover {
+    cursor: pointer;
 }
