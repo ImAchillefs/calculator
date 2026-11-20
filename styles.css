@@ -23,6 +23,8 @@ html, body, .calculator, .buttons-container {
     flex-grow: 1;
     height: 2.75rem;
     border: 0.25rem solid black;
+    text-align: right;
+    padding: 1rem;
 }
 
 .buttons-container {
