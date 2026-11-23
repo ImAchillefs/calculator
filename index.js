@@ -4,6 +4,20 @@ const output = document.getElementById("output");
 
 btns.forEach(i => {
 	i.addEventListener("click", () => {
-		output.value += i.textContent;
+		if (i.classList.contains("number") || i.classList.contains("equation")) {
+			output.value += i.textContent;
+		}
+		if (i.textContent === "del" && output.value.length > 0) {
+			output.value = output.value.slice(0, -1);
+		}
+		if (i.textContent === "AC") {
+			output.value = "0";
+		}
+		if (i.textContent === "%") {
+			output.value = math.evaluate(output.value);
+		}
+		if (i.textContent === "=") {
+			output.value = math.evaluate(output.value);
+		}
 	})
 })
